@@ -1,0 +1,29 @@
+Source: libtext-diff-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: libalgorithm-diff-perl,
+                     libtest-cpan-meta-perl,
+                     libtest-minimumversion-perl,
+                     libtest-pod-perl,
+                     perl
+Standards-Version: 4.1.1
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libtext-diff-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libtext-diff-perl.git
+Homepage: https://metacpan.org/release/Text-Diff
+
+Package: libtext-diff-perl
+Architecture: all
+Depends: libalgorithm-diff-perl,
+         ${misc:Depends},
+         ${perl:Depends}
+Description: Perl module to find differences in files and record sets
+ Text::Diff provides a basic functions similar to the GNU diff utility. It is
+ not anywhere near as feature complete as GNU diff, but is better integrated
+ with Perl and available on all platforms. It is often faster than shelling
+ out to a system's diff executable for small files, and generally slower on
+ larger files. While it is not guaranteed to produce the same output as the
+ system diff command, output is often identical.

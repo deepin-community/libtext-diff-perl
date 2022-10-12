@@ -1,0 +1,142 @@
+libtext-diff-perl (1.45-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Jay Bonci from Uploaders. Thanks for your work!
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Import upstream version 1.45
+  * Drop fix-spelling-error-in-manpage.patch (applied upstream)
+  * Declare compliance with Debian policy 4.1.1
+  * Add myself to Uploaders since we had not remaining uploaders
+  * Add patch to fix spelling errors in Text::Diff::Table
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 12 Nov 2017 09:16:32 +0100
+
+libtext-diff-perl (1.44-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 1.44
+  * Declare compliance with Debian policy 3.9.7
+  * Wrap and sort dependencies
+  * Add patch fixing spelling error in manpage
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Mon, 29 Feb 2016 09:10:54 -0300
+
+libtext-diff-perl (1.43-1) unstable; urgency=low
+
+  * Team upload
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Add fix-pod-errors.patch patch.
+    Fix POD formatting error.
+    Thanks to Christoph Biedl for the report and patch (Closes: #745336)
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Florian Schlichting ]
+  * Add debian/upstream/metadata
+  * Import upstream version 1.43
+  * Drop fix-pod-errors.patch, applied upstream
+  * Bump dh compat to level 9
+  * Declare compliance with Debian Policy 3.9.6
+  * Mark package autopkgtest-able
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 23 Aug 2015 15:18:15 +0200
+
+libtext-diff-perl (1.41-1) unstable; urgency=low
+
+  [ Ryan Niebur ]
+  * Email change: Jonathan Yu -> jawnsy@cpan.org
+
+  [ Nicholas Bamber ]
+  * Added myself to Uploaders
+  * New upstream release
+  * Updated dependencies
+  * Added debian/source/format
+  * Updated standards version to 3.9.2
+  * Refreshed copyright
+    - New file added with MIT/X11 license
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Mon, 18 Apr 2011 09:32:29 +0100
+
+libtext-diff-perl (1.37-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Split out changes to test suite into a patch; add quilt framework.
+  * Refresh debian/rules, no functional changes.
+  * Add debian/README.source to document quilt usage, as required by
+    Debian Policy since 3.8.0.
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Jonathan Yu ]
+  * New upstream release
+    + Updates to POD
+  * Updated copyright to the new machine-readable format
+  * Remove patches (fixed upstream now)
+  * Use new debian/rules format
+  * Standards-Version 3.8.2 (no changes)
+  * Now requires debhelper 7.0.50
+  * Add author tests to B-D-I
+
+ -- Jonathan Yu <frequency@cpan.org>  Thu, 16 Jul 2009 15:06:40 -0400
+
+libtext-diff-perl (0.35-3) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza).
+  * Set Maintainer to Debian Perl Group.
+  * Use dist-based URL in debian/watch.
+  * debian/rules: delete /usr/lib/perl5 only if it exists.
+
+  [ Gunnar Wolf ]
+  * Bumped up standards-version to 3.7.3 (no changes needed)
+  * Upgraded debhelper compat level to 6
+  * Moved debhelper to b-d
+  * Clarified the copyright information
+  * Remove the versioned dependency on Perl >= 5.6.0
+  * Make clean no longer ignores results
+  * Removed debian/substvars, which is auto-generated and should be
+    auto-cleaned
+  * Modified debian/watch to be more in line with our general style
+  * Added myself as an uploader
+
+ -- Gunnar Wolf <gwolf@debian.org>  Wed, 20 Feb 2008 16:50:08 -0600
+
+libtext-diff-perl (0.35-2) unstable; urgency=low
+
+  * Adds debian/watch file so uscan will work
+
+ -- Jay Bonci <jaybonci@debian.org>  Mon, 11 Oct 2004 02:40:26 -0400
+
+libtext-diff-perl (0.35-1) unstable; urgency=low
+
+  * Initial Release (closes: #178078)
+
+ -- Jay Bonci <jaybonci@debian.org>  Sun, 21 Sep 2003 02:50:48 -0400
